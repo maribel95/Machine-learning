@@ -30,7 +30,15 @@ A good treatment of the data set can significantly improve the accuracy and perf
 - [X] Combining K-Fold with Grid Search
 
 
-## P2: 
+## P2: Semantic segmentation with neural networks
+
+
+The problem posed is segmentation of medical images, in which the cells that appear from the background of the image must be separated.
+The original data set consists of 50 pairs of images, where each pair is in a different folder and all are contained in the main directory 'Mabimi'. Image pairs consist of the original image and its mask.
+The objective is to obtain neural network models that can satisfactorily segment medical images only from the original image, to later evaluate them. One of the models will be based on an existing network (we will choose UNet), and the others will be modifications of it (this way we can make comparisons more easily).
+
+
+<img width="849" alt="Captura de pantalla 2023-11-22 a las 8 24 02" src="https://github.com/maribel95/Machine-learning/assets/61268027/25088701-6287-43f6-8b3d-3f6b5bb52c30">
 
 
 
