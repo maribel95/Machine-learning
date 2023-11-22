@@ -23,3 +23,22 @@ A good treatment of the data set can significantly improve the accuracy and perf
 ### To do:
 
 - [X] Data set preparation
+- [X] Feature Selection(Word length, Number of vowels, Contains accent, Contains unique letter combinations, Frequency of each vowel)
+- [X] Metric selection
+- [X] Model training
+- [X] Determine training and test sets
+- [X] Combining K-Fold with Grid Search
+
+
+## P2: 
+
+
+
+
+
+
+
+
+
+
+
