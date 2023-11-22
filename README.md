@@ -123,10 +123,10 @@ For the problem we will use the Adam optimizer, which is one of the most popular
 ### Experiments results:
 
 
-<img width="842" alt="Captura de pantalla 2023-11-22 a las 8 50 47" src="https://github.com/maribel95/Machine-learning/assets/61268027/16b0d3ff-ceb3-4035-bfe2-53fe92089448">
+<img width="725" alt="Captura de pantalla 2023-11-22 a las 8 50 47" src="https://github.com/maribel95/Machine-learning/assets/61268027/16b0d3ff-ceb3-4035-bfe2-53fe92089448">
 
 
-<img width="837" alt="Captura de pantalla 2023-11-22 a las 8 51 27" src="https://github.com/maribel95/Machine-learning/assets/61268027/783d8320-7bbf-4206-9fd4-ced3ad3162ea">
+<img width="725" alt="Captura de pantalla 2023-11-22 a las 8 51 27" src="https://github.com/maribel95/Machine-learning/assets/61268027/783d8320-7bbf-4206-9fd4-ced3ad3162ea">
 
 
 <img width="725" alt="Captura de pantalla 2023-11-22 a las 8 51 59" src="https://github.com/maribel95/Machine-learning/assets/61268027/daaf8a35-dde0-4802-b21c-eca10e314077">
