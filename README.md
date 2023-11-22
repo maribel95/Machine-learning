@@ -63,6 +63,10 @@ UNet variation that will get rid of skip connections. In this way we can evaluat
 Variation of the UNet in which we will add more layers of depth. You may get better results, but you run the risk of overfitting if you adjust too closely to the training data. Additionally, it will be computationally more expensive.
 In the next main section (Experiments performed) we will see the structure of the models and the layers themselves.
 
+<img width="779" alt="Captura de pantalla 2023-11-22 a las 8 47 31" src="https://github.com/maribel95/Machine-learning/assets/61268027/ece0abc3-ae70-42ac-947a-5dd59c236adf">
+
+
+
 ### Data treatment:
 
 Because we will use the Pytorch library, we will have to apply a series of changes to the images in order to work with them properly.
@@ -101,8 +105,31 @@ Representation with operations between sets
 
 <img width="160" alt="Captura de pantalla 2023-11-22 a las 8 43 32" src="https://github.com/maribel95/Machine-learning/assets/61268027/c931399d-57e5-47f8-9f09-0a99416fb9d4">
 
+### Loss function:
+
+The loss function is a way to measure how far the model is from generating expected results, or put another way, it calculates the difference between the prediction and the correct result. In conjunction with an optimizer, it will be possible to train the model, which will try to minimize the error.
+We will use the Dice Loss, which as the name itself suggests, is related to the Dice Score, since the Dice Loss is obtained by subtracting the Dice Score itself from 1.
+
+<img width="420" alt="Captura de pantalla 2023-11-22 a las 8 45 53" src="https://github.com/maribel95/Machine-learning/assets/61268027/233561ca-0eab-43e1-b72f-898fd39a9fb4">
 
 
+
+### Optimizer:
+
+The optimizer is responsible for updating the weights and parameters of the neural network in response to errors made in the prediction (information provided by the loss function).
+
+For the problem we will use the Adam optimizer, which is one of the most popular in deep learning. This is because it has a fast computing time and requires few parameters to be tuned. The results of this optimizer are generally very good, as it has a fast and effective convergence capacity.
+
+### Experiments results:
+
+
+<img width="842" alt="Captura de pantalla 2023-11-22 a las 8 50 47" src="https://github.com/maribel95/Machine-learning/assets/61268027/16b0d3ff-ceb3-4035-bfe2-53fe92089448">
+
+
+<img width="837" alt="Captura de pantalla 2023-11-22 a las 8 51 27" src="https://github.com/maribel95/Machine-learning/assets/61268027/783d8320-7bbf-4206-9fd4-ced3ad3162ea">
+
+
+<img width="725" alt="Captura de pantalla 2023-11-22 a las 8 51 59" src="https://github.com/maribel95/Machine-learning/assets/61268027/daaf8a35-dde0-4802-b21c-eca10e314077">
 
 
 
