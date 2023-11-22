@@ -41,7 +41,7 @@ The objective is to obtain neural network models that can satisfactorily segment
 <img width="849" alt="Captura de pantalla 2023-11-22 a las 8 24 02" src="https://github.com/maribel95/Machine-learning/assets/61268027/25088701-6287-43f6-8b3d-3f6b5bb52c30">
 
 
-### Consideres solutions:
+### Considered solutions:
 
 In every neural network problem there are a series of aspects to address before moving on to the implementation of the solution. In this case, three different neuronal models have been proposed. The idea is to observe the operation of each one and analyze the performance of each network for the same problem. The idea is to use a neural network as a basis, apply some changes to its architecture and see the impact of these changes.
 
@@ -62,6 +62,36 @@ UNet variation that will get rid of skip connections. In this way we can evaluat
 
 Variation of the UNet in which we will add more layers of depth. You may get better results, but you run the risk of overfitting if you adjust too closely to the training data. Additionally, it will be computationally more expensive.
 In the next main section (Experiments performed) we will see the structure of the models and the layers themselves.
+
+### Data treatment:
+
+Because we will use the Pytorch library, we will have to apply a series of changes to the images in order to work with them properly.
+When analyzing the data we quickly realize that the images of the original masks have several details to take into account:
+- The first is that the color space of the masks is not binary, that is, there is a margin of gray that does not interest us. We are not interested in grays, so we apply a threshold where the pixels become completely white, and the rest become black.
+- The second thing is that there was a specific mask image whose color space was different from the rest (cell_14 mask), specifically RGB. We have simply converted it to grayscale and replaced it in the dataset. This means that to execute the provided code you must download the modified dataset (there is a link at the end of the document that also includes the weights to download).
+
+Once these initial considerations have been resolved, we can now proceed to create our dataset.
+
+We will create our own dataset class where we will store all the images along with their masks. We will apply the necessary transformation to be able to have them in a format that fits our way of working with neural networks. This transformation will consist of resize to 224x224 . Later we turn them into tensioners. Finally we will normalize the source images, dividing by the maximum pixel value.
+Once this is done, we divide the data set into training and test, giving a size of 80% to the training (40 images) and 20% to the test (10 images).
+Then we will perform a random split of the training data and the test data, to finally load the data in batches.
+In this very particular case, as we only have 50 samples (it is a very low number) we have decided to use batches of size 1.
+
+A large batch size for training would not have been correct since, for example, with a size of 10, we would only readjust the weights 4 times (taking into account that our training set is made up of 40 images).
+
+### Metrics:
+
+We have selected two metrics to evaluate the performance of the model: IoU (Intersection over Union) and Dice Score. Using two will give us a broader view of the models' performance.
+
+#### Intersection over Union
+
+
+
+
+
+
+
+
 
 
 
