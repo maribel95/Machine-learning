@@ -45,6 +45,26 @@ The objective is to obtain neural network models that can satisfactorily segment
 
 In every neural network problem there are a series of aspects to address before moving on to the implementation of the solution. In this case, three different neuronal models have been proposed. The idea is to observe the operation of each one and analyze the performance of each network for the same problem. The idea is to use a neural network as a basis, apply some changes to its architecture and see the impact of these changes.
 
+#### UNet
+
+In the case of evaluating an existing architecture we will use a UNet. This is because UNet is specially designed for image segmentation (it has skip connections that retain image information when reconstructing it after extracting features), and because we have also taught it in class and we already have an implementation in the teacher's github.
+
+<img width="748" alt="Captura de pantalla 2023-11-22 a las 8 30 02" src="https://github.com/maribel95/Machine-learning/assets/61268027/de6a9516-3179-4562-b56e-c63a70e90226">
+
+And then we have built our own models, carrying out different experiments:
+
+#### PotiNet
+
+UNet variation that will get rid of skip connections. In this way we can evaluate how it affects having or not having this technique implemented. We expect the results to be worse, since now the decoder will receive half of the features (which will no longer arrive from the encoder), and will negatively impact the network's ability to retain information across the layers and will result in a reduction in precision and an increase in error.
+
+
+#### XopiNet
+
+Variation of the UNet in which we will add more layers of depth. You may get better results, but you run the risk of overfitting if you adjust too closely to the training data. Additionally, it will be computationally more expensive.
+In the next main section (Experiments performed) we will see the structure of the models and the layers themselves.
+
+
+
 
 
 
