@@ -85,9 +85,21 @@ We have selected two metrics to evaluate the performance of the model: IoU (Inte
 
 #### Intersection over Union
 
+As its name indicates, the calculation of this metric consists of dividing the intersection between the union of both sets, with A being the ground truth and B the result of the segmentation in the image. IoU measures the similarity between two regions and may not be the best choice for binary segmentation, where pixels are classified rather than identifying entire regions.
+
+<img width="321" alt="Captura de pantalla 2023-11-22 a las 8 43 40" src="https://github.com/maribel95/Machine-learning/assets/61268027/cf98353f-5dbd-4c28-8620-a50a7dcf122c">
 
 
 
+#### Dice Score
+
+The Dice Score takes into account both the positives found and those that were not found, penalizing if the algorithm does not find them.
+
+Although in the case of binary segmentation, the Dice Score is the most appropriate metric to evaluate the quality of the segmentation. This is because it is a metric that is well suited to evaluating the similarity between two collections of pixels, such as segmentation results and reference data, and in fact is commonly used in the context of binary segmentation in images. medical.
+
+Representation with operations between sets
+
+<img width="160" alt="Captura de pantalla 2023-11-22 a las 8 43 32" src="https://github.com/maribel95/Machine-learning/assets/61268027/c931399d-57e5-47f8-9f09-0a99416fb9d4">
 
 
 
