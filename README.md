@@ -41,7 +41,9 @@ The objective is to obtain neural network models that can satisfactorily segment
 <img width="849" alt="Captura de pantalla 2023-11-22 a las 8 24 02" src="https://github.com/maribel95/Machine-learning/assets/61268027/25088701-6287-43f6-8b3d-3f6b5bb52c30">
 
 
+### Consideres solutions:
 
+In every neural network problem there are a series of aspects to address before moving on to the implementation of the solution. In this case, three different neuronal models have been proposed. The idea is to observe the operation of each one and analyze the performance of each network for the same problem. The idea is to use a neural network as a basis, apply some changes to its architecture and see the impact of these changes.
 
 
 
